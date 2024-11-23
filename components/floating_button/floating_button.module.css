@@ -1,0 +1,66 @@
+.floating_button{
+  cursor: pointer;
+  z-index: 2;
+  position: fixed;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #1163ea;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+.floating_card{
+    z-index: 2;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    box-shadow: 2px 2px 3px #999;
+    background: #fff;
+    animation: slideIn 0.5s ease-in-out;
+}
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.content{
+    max-width: 330px;
+    padding: 30px 20px;
+}
+.floating_card h6{
+  text-align: center !important;
+  color: #273B5E;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.41;
+}
+.button{
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #1164e9;
+  color: #1164e9;
+  margin: 8px;
+  text-align: center;
+  cursor:pointer
+}
+.closeButton{
+    width: 100%;
+    padding: 11px;
+    background:#1164e9;
+    color: #fff;
+    margin: 8px;
+    text-align: center;
+    cursor:pointer
+}

@@ -1,0 +1,63 @@
+.head_wrapper{
+    background: #1164e9;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    padding-top: 165px;
+    padding-bottom:60px ;
+}
+.head{
+    width: 1200px;
+    margin-inline: auto;
+    display: flex;
+}
+.textcontents{
+    width: 50%;
+}
+.textcontents h1{
+    margin-block: 30px;
+    font-weight: 900;
+    font-size: 40;
+    line-height: 1.2;
+    color: #fff;
+    text-align:start;
+}
+.textcontents p{
+  margin:0 0 20px 0;
+  line-height: 32px;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: justify;
+}
+.textcontents .buttons{
+    display:flex;
+    align-items: start;
+    gap:10px;
+    font-weight: 500;
+}
+
+@media (max-width: 1199px) {
+    /* Your CSS rules for screens smaller than 1200px */
+ .head{
+    flex-direction: column;
+    margin-inline: auto;
+    align-items: center;
+    gap: 60px;
+ }
+ .textcontents{
+    width: 80%;
+    text-align: center;
+ }
+ .textcontents h1{
+    text-align: center;
+ }
+ .textcontents p{
+    text-align:center;
+  }
+  .textcontents .buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+}
